@@ -1,0 +1,212 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "program",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "vlc",
+              "synonyms": [
+                "vlc media player",
+                "videolan player",
+                "vlc player"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "string",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "pizza",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "pferd",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "auto",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "haus",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "hase",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "karotte",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "befehl",
+        "samples": [
+          "starte {program_name}",
+          "sag {program_name} {command}",
+          "führe {command} aus"
+        ],
+        "slots": [
+          {
+            "name": "program_name",
+            "type": "string"
+          },
+          {
+            "name": "command",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "entkoppeln",
+        "samples": [
+          "verbindung trennen",
+          "beende die verbindung",
+          "trennen"
+        ],
+        "slots": []
+      },
+      {
+        "name": "koppeln",
+        "samples": [
+          "verbinden mit {secretw_one} {secretw_two}"
+        ],
+        "slots": [
+          {
+            "name": "secretw_one",
+            "type": "string",
+            "samples": [
+              "ich habe gesagt {secretw_one}",
+              "{secretw_one}"
+            ]
+          },
+          {
+            "name": "secretw_two",
+            "type": "string",
+            "samples": [
+              "{secretw_two}",
+              "ich habe gesagt {secretw_two}"
+            ]
+          }
+        ]
+      }
+    ],
+    "invocationName": "computer"
+  },
+  "prompts": [
+    {
+      "id": "Confirm.Intent-entkoppeln",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Soll ich wirklich entkoppeln ?"
+        }
+      ]
+    },
+    {
+      "id": "Confirm.Intent-koppeln",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Ich habe verstanden {secretw_one} {secretw_two}. Soll ich mich verbinden ?"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-koppeln.IntentSlot-secretw_one",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Du hast anscheinend das erste Wort vergessen. Bitte sag es jetzt "
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-koppeln.IntentSlot-secretw_two",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "Du hast anscheinend das zweite wort vergessen. Bitte sag es jetzt"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "intents": [
+      {
+        "name": "entkoppeln",
+        "confirmationRequired": true,
+        "prompts": {
+          "confirmation": "Confirm.Intent-entkoppeln"
+        },
+        "slots": []
+      },
+      {
+        "name": "koppeln",
+        "confirmationRequired": true,
+        "prompts": {
+          "confirmation": "Confirm.Intent-koppeln"
+        },
+        "slots": [
+          {
+            "name": "secretw_one",
+            "type": "string",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-koppeln.IntentSlot-secretw_one"
+            }
+          },
+          {
+            "name": "secretw_two",
+            "type": "string",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicitation": "Elicit.Intent-koppeln.IntentSlot-secretw_two"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
