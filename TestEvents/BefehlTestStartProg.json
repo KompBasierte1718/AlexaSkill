@@ -1,0 +1,55 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "SessionId.39647318-2498-41a2-91a0-ed09460c038f",
+    "application": {
+      "applicationId": "amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216"
+    },
+    "attributes": {
+      "koppeln": {
+        "word1": "pizza",
+        "word2": "Haus"
+      },
+      "device": "alexa",
+      "deviceID": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.b38d7c18-1efa-489a-a6a5-8a6d1b24d661",
+    "intent": {
+      "name": "befehl",
+      "slots": {
+        "program_name": {
+          "name": "program_name",
+          "value": "steam"
+        },
+        "command": {
+          "name": "command"
+        }
+      }
+    },
+    "locale": "de-DE",
+    "timestamp": "2018-01-29T20:00:24Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}

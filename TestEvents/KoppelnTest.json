@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.3ba07c64-77d0-4634-909b-100c24847d52",
+    "application": {
+      "applicationId": "amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+    }
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "Display": {
+      "token": ""
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AH6QEZDMUWAMVTLSCMBM26VWGUHGS2JPHW4FJK5KOORU4X3IBJE4SL4ZTHYCM6DTASACMPDKNYDE5VIWTVQFMKUAWWDUEQIA6ADECJH6IEFDKLFWNQL4O63R56MBFLOFDP62AK3PLLX2SV7SJM5FGQ4WZVSQ",
+        "supportedInterfaces": {
+          "AudioPlayer": {},
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.eu.amazonalexa.com",
+      "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjk0OGIxNGQzLWRmYjAtNDM2NS1hMGRmLWRmMzc4ZjJhYzIxNiIsImV4cCI6MTUxNjEzMzcxOSwiaWF0IjoxNTE2MTMwMTE5LCJuYmYiOjE1MTYxMzAxMTksInByaXZhdGVDbGFpbXMiOnsiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUg2UUVaRE1VV0FNVlRMU0NNQk0yNlZXR1VIR1MySlBIVzRGSks1S09PUlU0WDNJQkpFNFNMNFpUSFlDTTZEVEFTQUNNUERLTllERTVWSVdUVlFGTUtVQVdXRFVFUUlBNkFERUNKSDZJRUZES0xGV05RTDRPNjNSNTZNQkZMT0ZEUDYyQUszUExMWDJTVjdTSk01RkdRNFdaVlNRIiwidXNlcklkIjoiYW16bjEuYXNrLmFjY291bnQuQUVYWUNGNUtDUVBaUjNDQUVMWUxUUkFXQlJXVjRXRUJJSEpXUVhCSlVRVEsyN1BVM0pNR1VJM0tLQVVMUEZVQ1FBRlNINU5MVUxIT002NU1LQ0ZLVUFBUUk1Sk5FRElLSFNHTklNWDZGWlVVWTVWS0pXMjNQV09PT1o0SlpaVVA0T1pOV1RBM01JNDQ0TEY3WEdFNkNWM1JUUUdOVFlCTk9WWjJPWFdBMk03SEY2VjZBSjdXWk1BNENFN0pRUTNMSU83QVdOQzZDSlg1R0pBIn19.fqArx5RERhstAxYtGyQyHbl-orSXB_HXzbm-M5kEa41qvWrprvrhKwHUE0_L0gzShbCttifJDy_rfxqHZP1iRdJV7_UMRAedU2qETV6grlPUDUIN_WGdUOrnAJCcGnAwY1WBnvMOX0QQRb-6lfxXCCgWeqCLWMILUOWRDXKgVrX4qit679Fc7FXeJNW4Tg79BbjH9ggbdtQv2YuuAzdrX8dJtQy_ezOEhmv8owRnRnvSTxxhF3wrBGtxzXVultKmPUgoBOfttnik0lv5pTPaUA3wXncVGYrYvkfCk6K81ZV_FbfbJPHY4B9M3l_5ve7JixhDtnyYwVSFh0pHsmfYJg"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.d618f7a5-313e-48fe-b323-2090128b9792",
+    "timestamp": "2018-01-16T19:15:19Z",
+    "locale": "de-DE",
+    "intent": {
+      "name": "koppeln",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "secretw_two": {
+          "name": "secretw_two",
+          "value": "garten",
+          "resolutions": {
+            "resolutionsPerAuthority": [
+              {
+                "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216.string",
+                "status": {
+                  "code": "ER_SUCCESS_NO_MATCH"
+                }
+              }
+            ]
+          },
+          "confirmationStatus": "NONE"
+        },
+        "secretw_one": {
+          "name": "secretw_one",
+          "value": "Haus",
+          "resolutions": {
+            "resolutionsPerAuthority": [
+              {
+                "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216.string",
+                "status": {
+                  "code": "ER_SUCCESS_MATCH"
+                },
+                "values": [
+                  {
+                    "value": {
+                      "name": "haus",
+                      "id": "195efe600e8ee7550c43b93116820275"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "confirmationStatus": "NONE"
+        }
+      }
+    },
+    "dialogState": "STARTED"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "session": {
+    "new": true,
+    "sessionId": "SessionId.861fa2d1-7a20-4068-b410-192f7118b3f3",
+    "application": {
+      "applicationId": "amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.a11f3e1e-0803-4779-9e45-94ed666254e4",
+    "intent": {
+      "name": "befehl",
+      "slots": {
+        "program_name": {
+          "name": "program_name",
+          "value": "steam"
+        },
+        "command": {
+          "name": "command",
+          "value": "csgo"
+        }
+      }
+    },
+    "locale": "de-DE",
+    "timestamp": "2018-01-29T20:14:43Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.948b14d3-dfb0-4365-a0df-df378f2ac216"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEXYCF5KCQPZR3CAELYLTRAWBRWV4WEBIHJWQXBJUQTK27PU3JMGUI3KKAULPFUCQAFSH5NLULHOM65MKCFKUAAQI5JNEDIKHSGNIMX6FZUUY5VKJW23PWOOOZ4JZZUP4OZNWTA3MI444LF7XGE6CV3RTQGNTYBNOVZ2OXWA2M7HF6V6AJ7WZMA4CE7JQQ3LIO7AWNC6CJX5GJA"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}
