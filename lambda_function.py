@@ -137,6 +137,9 @@ def entkoppeln(intent, session):
                         "You can say, my favorite color is red."
         should_end_session = False
 
+    # Setting reprompt_text to None signifies that we do not want to reprompt
+    # the user. If the user does not respond or says something that is not
+    # understood, the session will end.
     return build_response(session_attributes, build_speechlet_response(
         intent['name'], speech_output, reprompt_text, should_end_session))
 
@@ -179,11 +182,13 @@ def befehl(intent, session):
         utterance_recognized = True
         program = intent['slots']['program_name']['value']
         command = intent['slots']['command']['value']
-        instruction = program + " " + command
+        instruction = program
         
-        session_attributes = create_befehl_attributes(instruction,userID)
+        session_attributes = create_befehlcommand_attributes(instruction,command,userID)
         speech_output = "Der Befehl: " + \
                         instruction + \
+                        " " + \
+                        command + \
                         " wurde gesendet."
         
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -213,6 +218,14 @@ def befehl(intent, session):
 def create_befehl_attributes(instruction,userid):
     befehl_data = {}
     befehl_data['instruction'] = instruction
+    befehl_data['device'] = 'alexa'
+    befehl_data['deviceID'] = userid
+    return befehl_data
+    
+def create_befehlcommand_attributes(instruction,task,userid):
+    befehl_data = {}
+    befehl_data['instruction'] = instruction
+    befehl_data['task'] = task
     befehl_data['device'] = 'alexa'
     befehl_data['deviceID'] = userid
     return befehl_data
@@ -269,6 +282,7 @@ def on_session_ended(session_ended_request, session):
     """
     print("on_session_ended requestId=" + session_ended_request['requestId'] +
           ", sessionId=" + session['sessionId'])
+    # add cleanup logic here
 
 
 # --------------- Main handler ------------------
